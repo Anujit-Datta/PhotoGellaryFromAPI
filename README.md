@@ -1,5 +1,6 @@
-# assignment_module_14
-Photo Gallery App
+# Photo Gallery App
+Assignment of module 14
+
 
 
 Some Screenshots of my output:
