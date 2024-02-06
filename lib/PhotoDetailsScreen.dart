@@ -10,28 +10,30 @@ class PhotoDetails extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 100),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Image.network(photo.url!,fit: BoxFit.contain,),
-            const SizedBox(height: 20,),
-            Text(
-              'Title: ${photo.title!}',
-              style: const TextStyle(
-                fontWeight: FontWeight.w500,
-                fontSize: 20,
-              ),
-            ),
-            Text(
-              'ID: ${photo.id}',
-              style: const TextStyle(
+        padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 10),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image.network(photo.url!,fit: BoxFit.contain,),
+              const SizedBox(height: 20,),
+              Text(
+                'Title: ${photo.title!}',
+                style: const TextStyle(
                   fontWeight: FontWeight.w500,
-                  fontSize: 25,
+                  fontSize: 20,
+                ),
               ),
-            ),
-          ],
+              Text(
+                'ID: ${photo.id}',
+                style: const TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 25,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
